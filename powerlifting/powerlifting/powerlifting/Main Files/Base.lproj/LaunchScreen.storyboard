@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="chb-Nc-ojU">
+                                <rect key="frame" x="25" y="105" width="325" height="367"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-vk-aHv">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="325.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="164" id="0rC-7J-zl7"/>
+                                            <constraint firstAttribute="width" constant="316" id="40V-f0-mQy"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="0rC-7J-zl7"/>
+                                                <exclude reference="40V-f0-mQy"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powerlifting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-5w-Beb">
+                                        <rect key="frame" x="52" y="327.5" width="221" height="39.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38.329999999999998" id="IjP-zv-NXC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="221" id="Q8p-gT-2YE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="35"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="IjP-zv-NXC"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" spacing="2"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="chb-Nc-ojU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="1jr-A1-MJE"/>
+                            <constraint firstItem="chb-Nc-ojU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="PyO-op-wC2">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="chb-Nc-ojU" secondAttribute="trailing" constant="30" id="VOa-rY-uPk">
+                                <variation key="heightClass=regular-widthClass=compact" constant="29"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="chb-Nc-ojU" secondAttribute="bottom" constant="327.67000000000002" id="YfW-iQ-bP4"/>
+                            <constraint firstItem="chb-Nc-ojU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="fx0-n9-S2T"/>
+                            <constraint firstItem="chb-Nc-ojU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="203.99999999999997" id="ggo-Hb-6Eh">
+                                <variation key="heightClass=regular-widthClass=compact" constant="250.99999999999997"/>
+                            </constraint>
+                            <constraint firstItem="chb-Nc-ojU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jiY-ft-gHK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1jr-A1-MJE"/>
+                                <exclude reference="ggo-Hb-6Eh"/>
+                                <exclude reference="jiY-ft-gHK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="VOa-rY-uPk"/>
+                                <exclude reference="YfW-iQ-bP4"/>
+                                <include reference="1jr-A1-MJE"/>
+                                <exclude reference="PyO-op-wC2"/>
+                                <exclude reference="fx0-n9-S2T"/>
+                                <exclude reference="ggo-Hb-6Eh"/>
+                                <include reference="jiY-ft-gHK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.399999999999999" y="372.86356821589209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homescreen" width="325" height="325.5"/>
+    </resources>
+</document>
